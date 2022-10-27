@@ -190,14 +190,7 @@ http status codes :
 5XX : Server sider error
 
 
-Task : Download a template from Internet. Deliver the webiste using s3- static webiste feature.
-
-___________________________________________
-
-IAM Task : One bucket one user task
-
---> create an s3 bucket.
-Create an IAM user.. Allocate only created s3 bucket to this user. (put/get/list) 
+Task : Download a template from Internet. Deliver the webiste using s3 - static webiste feature.
 
 _____________________________________________________________________________________________________
 
@@ -443,4 +436,21 @@ Create 2 buckets (user1bucket) and (user2bucket)..
 ==> User1 and user2.. Should not able to see anything if they go to s3 console.
 
 https://aws.amazon.com/premiumsupport/knowledge-center/s3-console-access-certain-bucket/
+
+
+
+
+
+
+
+https://github.com/avizway1/oct2022
+
+https://avinash.s3.amazonaws.com/demo.txt
+
+https://s3-accelerate-speedtest.s3-accelerate.amazonaws.com/en/accelerate-speed-comparsion.html?region=ap-south-1&origBucketName=avinash
+
+
+
+
+
 
