@@ -174,20 +174,13 @@ cut and paste  :  mv
 
 to rename a file we use "mv" command :  mv oldfilename newfilename
 
-
 _________________________
 
 vim / vi / nano
+_________________________
+_________________________
+_________________________
 
-VIM Editor : 
-
-vim filename	--> Open this file in VIM editor
-
-Press I			--> INSERT Mode
-Press ESC		--> ReadOnly Mode
-:wq				--> Write and Quit (Write changes to file and quit the editor)
-:q!				--> Quit the Editor without writing the changes
-__
 
 Req: Make this linux Instance as Web Server (Apache).
 
