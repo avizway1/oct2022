@@ -382,7 +382,7 @@ Step 4 : Grab the entry information from /etc/mtab file
 
 Step 5 : Edit the "/etc/fstab" file and write the information grabbed from "/etc/mtab" file.
 
-
+===================================================================================================================
 
 
 windows + R ==> type "services.msc" ==. show all the services your windows os is using. (running/stopped)
@@ -399,3 +399,58 @@ Security group must be open with port 80 (http)
 
 cd /var/www/html/
 vim index.html
+
+Windows OS file Systems: 
+FAT 32
+NTFS ==> most used
+ReFS
+
+Linux OS File Systems: 
+EXt3
+ext4
+xfs ==> most used
+nfs
+
+df ==> volumes
+df -Th
+
+lsblk ==> show all associated volumes
+df -Th ==> Shows OS detected volumes (usable volumes)
+
+grab the name : /dev/xvda1
+
+Create a new volume. (volume is in same AZ of our ec2 instance) and attach to instance.
+Navigate to instancew and run "lablk" and grab the new volume name.
+
+New volume name : /dev/xvdf
+
+verify new volume has any file system .??? 
+
+file -s /dev/xvdf
+
+If out put is ""/data"", That means we dont have any file system. As a first step write a file system to the new volume.
+
+mkfs -t xfs /dev/xvdf		==> Write xfs file system to new 1 gb volume.
+
+mount /dev/xvdf volume1/	==> Mouting xvdf (1gb) to a directory named volume1
+
+==> Whatever mount we performed, This is temp mount.. It lasts till instance reboot.. 
+If you want to make it perm mopunt, add an entry in a file named "/etc/fstab"
+
+==> Grab the entry information from a file "/etc/mtab"
+
+/dev/xvdf /home/ec2-user/volume1 xfs rw,relatime,attr2,inode64,logbufs=8,logbsize=32k,noquota 0 0
+
+
+Decreasing volume size is not possible. 
+
+First increase the volume size in AWS console. 
+
+At OS level.. xfs_growfs -d /mountpoint (/dev/xvdf)
+
+
+
+
+https://learn.futureskillsprime.in/log_in
+
+
