@@ -515,6 +515,8 @@ Task 2 : Launch an ec2 instance in ap-south-1a.. Create a "New volume with 1 gb 
 Task 3 : Launch Another ec2 instance in ap-south-1b..
 Get the 2gb volume data from instance 1a to newly launch 1b ec2 instance.. Make Same volume available to "1b instance"..!!
 
+/dev/xvdb /home/ec2-user/volume1 xfs rw,relatime,attr2,inode64,logbufs=8,logbsize=32k,noquota 0 0
+
 ______________________________________________________________________________________
 
 D:
