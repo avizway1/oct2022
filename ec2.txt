@@ -604,11 +604,10 @@ Whenever we launch an ec2 instance, 2 status checks will happen.
 
 _________________________________________________________________________________________________
 
-
+D: 10/11/2022
 
 Vertical Scaling : Upgrading same instance resources.. t2.micro --> c5.2xlarge
 Horizantal Scaling : Distribute application load to multiple ec2 instances.. 
-
 
 
 Classic ELB : Layer 4/7 LB.. : Outdated.. : http, https, tcp, udp.. 
@@ -635,10 +634,7 @@ echo "<h1>This is my WebServer : 8080</h1>" > /var/www/html/index.html
 For ELBs, We will get DNS Endpoint..
 Roundrobin algorithm.. 
 
-Task : Launch multiple webservers in Multiple AZs... COnfigure the Classic ELB. 
-
-_______________________________________________________________________________________
-
+___________________________________________________
 
 Target Group : Each target group is used to route requests to one or more registered targets. When you create each listener rule, you specify a target group and conditions. When a rule condition is met, traffic is forwarded to the corresponding target group.
 
@@ -661,10 +657,16 @@ millions req/sec : NLB
 ELB Access Logs : Logging on ELB. Destination is s3.
 
 
+Task : Practice ALB with multiple TGs. (80, 8080, 8888)
 
 
-Task : Practice Network ELB with multiple TGs. (80, 8080, 8888)
+Task (Optional): Launch multiple webservers in Multiple AZs... COnfigure the Classic ELB. 
+
 _______________________
+
+Free Tier : 750 hrs/month
+
+
 
 
 Task : Launch multiple webservers in Multiple AZs... COnfigure the Classic ELB. (OPTIONAL)
