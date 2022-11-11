@@ -609,7 +609,6 @@ D: 10/11/2022
 Vertical Scaling : Upgrading same instance resources.. t2.micro --> c5.2xlarge
 Horizantal Scaling : Distribute application load to multiple ec2 instances.. 
 
-
 Classic ELB : Layer 4/7 LB.. : Outdated.. : http, https, tcp, udp.. 
 Application ELB : Layer 7 ELB.. : http and https
 Network ELB : Layer 4 ELB.. : TCP, UDP, TLS 
@@ -672,7 +671,6 @@ Free Tier : 750 hrs/month
 Task : Launch multiple webservers in Multiple AZs... COnfigure the Classic ELB. (OPTIONAL)
 Task : Practice application ELB / ALB with multiple TGs. (80, 8080, 8888)
 --> Make sure you configure Pipeline mechanism between your ec2 instances and ELB.!!
-
 
 _______________________________________________________________________________________________________
 
