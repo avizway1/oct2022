@@ -824,10 +824,7 @@ c1/c2 : Client id
 s : Staging / NonProd
 u : uat 
 p : production
-
-
 ____________________________________________________________________________________________________________
-
 
 AWS CLI : 
 
@@ -960,3 +957,20 @@ Eventbridge :
 Task 1 : Configure Eventbridge to stop an ec2 instance at a particular time using Crontab. (10:30 Am)
 
 Task 2 : Configure to stop an ec2 instance after 5 minutes, trigger an email with custom email format.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
