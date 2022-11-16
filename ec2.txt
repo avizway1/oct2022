@@ -883,6 +883,10 @@ copy data from s3 to ec2		(--recursive)
 
 Task 3 : Use Switch Role option to roam across multiple account. 
 
+--> create an IAM user, Dont provide any access to this user.
+--> Create an IAM role with S3 FullAccess policy to the role.
+--> Allow IAM user to use this role, When this IAM user perform Switch role, Then he should be able to access s3.
+
 _______________________________________________________________________________________________________
 
 
