@@ -889,6 +889,7 @@ Task 3 : Use Switch Role option to roam across multiple account.
 
 _______________________________________________________________________________________________________
 
+D: 17/11/2022
 
 Systems Manager run command :
 --> All instance must associated with "SSM ROle". 
